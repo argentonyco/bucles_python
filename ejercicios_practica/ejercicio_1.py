@@ -5,7 +5,7 @@
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
-# que aparecen en verde con el hashtag "#"
+# que aparecen en verde con el hashtag "#"  h
 
 # Ejercicios con bucles "while"
 
@@ -21,7 +21,7 @@ while condicion:
     print("Valor de x =", x)
     # Coloque la línea de código para que "x" incremente "1"
 
-x = 5
+x = 5 #prueba
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea mayor o igual a 0>
 # Además, complete la línea de código necesaria para que
