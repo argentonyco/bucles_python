@@ -10,8 +10,6 @@
 # de mucho más tiempo para abordar estos temas por su cuenta.
 # Requiere mayor tiempo de dedicación e investigación autodidacta.
 
-temp_dataloger = [12.8, 18.6, 14.5, 20.8, 12.1, 21.2, 13.5, 18.6,
-                  14.7, 19.6, 11.2, 18.4]
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
 
@@ -40,8 +38,13 @@ el máximo y el mínimo utilizando los mismos métodos vistos
 durante la clase (ejemplos_clase/ejemplo_5.py)
 '''
 
+
+
 print("Mi primer pasito en data analytics")
 # Empezar aquí la resolución del ejercicio
+
+temp_dataloger = [12.8, 18.6, 14.5, 20.8, 12.1, 21.2, 13.5, 18.6,
+                  14.7, 19.6, 11.2, 18.4]
 
 temperatura_max = None      # Aquí debe ir almacenando la temp máxima
 temperatura_min = None      # Aquí debe ir almacenando la temp mínima
@@ -50,6 +53,22 @@ temperatura_promedio = 0    # Al finalizar el loop deberá aquí alamcenar el pr
 temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en la lista
 
 # Colocar el bucle aqui......
+
+#for i in temp_dataloger:
+    #if (temperatura_max is None) or (i > temperatura_max):
+    #    temperatura_max = i
+temperatura_max = max(temp_dataloger)
+    # if (temperatura_min is None) or (i < temperatura_min):
+    #     temperatura_min = i
+temperatura_min = min(temp_dataloger)
+    #temperatura_sumatoria += i
+temperatura_sumatoria = sum(temp_dataloger)
+temperatura_promedio = temperatura_sumatoria / len(temp_dataloger)
+
+print(f'Temperatura maxima: {temperatura_max}')
+print(f'Temperatura minima: {temperatura_min}')
+print(f'Sumatoria total de temperaturas: {temperatura_sumatoria}')
+print(f'Temperatura promedio: {temperatura_promedio}')
 
 # Al finalizar el bucle compare si el valor que usted calculó para
 # temperatura_max y temperatura_min coincide con el que podría calcular
@@ -83,3 +102,13 @@ https://es.weatherspark.com/y/28981/Clima-promedio-en-Buenos-Aires-Argentina-dur
 # ¿En qué época del año nos encontramos?
 # Imprima el resultado en pantalla
 # Debe utilizar temperatura_max y temperatura_min para definirlo
+
+
+if (temperatura_min >= 19) and (temperatura_max <= 28):# == range(19, 28):
+    print('Nos encontramos en verano')
+elif (temperatura_min >= 11) and (temperatura_max <= 20):# == range(19, 28):
+    print('Nos encontramos en otoño')
+elif (temperatura_min >= 8) and (temperatura_max <= 14):# == range(19, 28):
+    print('Nos encontramos en invierno')
+elif (temperatura_min >= 10) and (temperatura_max <= 24):# == range(19, 28):
+    print('Nos encontramos en primavera')    
