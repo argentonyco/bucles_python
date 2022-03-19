@@ -77,7 +77,7 @@ while True:
         print('Salimos')
         break
     else:
-        print('El operador iungresado es incorrecto')
+        print('El operador ingresado es incorrecto')
     
 
 

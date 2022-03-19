@@ -112,3 +112,5 @@ elif (temperatura_min >= 8) and (temperatura_max <= 14):# == range(19, 28):
     print('Nos encontramos en invierno')
 elif (temperatura_min >= 10) and (temperatura_max <= 24):# == range(19, 28):
     print('Nos encontramos en primavera')    
+
+print
